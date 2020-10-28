@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <action intentName="actions.intent.TAKE_COURSE">
+        <parameter name="course">
+            <entity-set-reference
+                entityType="org.schematype.Course"
+                urlFilter="https://www.course.org/*">
+            </entity-set-reference>
+        </parameter>
+        <fulfillment urlTemplates="{url}?referrer=actions-on-google-previous"/>
+    </action>
+</actions>
